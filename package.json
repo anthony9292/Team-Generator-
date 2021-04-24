@@ -1,0 +1,19 @@
+{
+  "name": "team-generator-",
+  "version": "1.0.0",
+  "description": "OOP test for coding bootcamp homework ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthony9292/Team-Generator-.git"
+  },
+  "author": "Anthony Ndegwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthony9292/Team-Generator-/issues"
+  },
+  "homepage": "https://github.com/anthony9292/Team-Generator-#readme"
+}
