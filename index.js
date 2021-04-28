@@ -6,8 +6,8 @@ const path = require("path");
 const fs = require("fs"); 
 const { request } = require("node:http");
 
-const OutPut_Dir = path.resolve(__dirname, "outputs"); 
-const outputPath = path.join(OutPut_Dir, "team.html"); 
+const Turnout_Dir = path.resolve(__dirname, "turnouts"); 
+const turnoutPath = path.join(Turnout_Dir, "team.html"); 
 
 const render = require("./dev/lib/htmlgenerator"); 
 const { type } = require("node:os");
@@ -108,3 +108,33 @@ function determineEmployee() {
         }
     })
 }
+
+//creation of Intern for the Team 
+function  internInfo() { 
+    inquirer.prompt(internQuestions)
+    .then((response) => { 
+        const intern = new Intern(response.name, response.id, response.email, response.github);
+        teamArray.push (intern); 
+        determineEmployee(); 
+    })
+ }
+
+ //creation of Engineer for the team 
+ function internInfo() { 
+     inquirer.prompt(internQuestions) 
+     .then((response) => { 
+         const engineer = new Engineer(response.name, response.id, response.email, response.github);
+         teamArray.push(engineer)
+         determineEmployee(); 
+     })
+ }
+
+ function createHTMLFile(){ 
+     try { 
+         const html = render(teamArray); 
+         fs.writeFileSync(turnoutPath, html); 
+     } catch (error){ 
+         console.log(error); 
+     }
+ }
+
