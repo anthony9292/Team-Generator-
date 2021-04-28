@@ -1,5 +1,5 @@
-const Emploee = rquire("./Employee");
+const Employee = require("./Employee");
 
-class engineer ectends Employee { 
-    constructor(name,id, email, gitHub)
+class engineer extends Employee { 
+    constructor(name, id, email, gitHub) 
 }
