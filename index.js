@@ -13,6 +13,7 @@ const render = require("./dev/lib/htmlgenerator");
 const { type } = require("node:os");
 
 const teamArray = []; 
+//Part 1 
 // foundation questions to start 
 const foundQuestions = [{
     type: 'input', 
@@ -36,3 +37,74 @@ const foundQuestions = [{
   }
 
 ]; 
+
+//Part 2
+//Manager Questions 
+
+const managerQuestions = [ 
+    ...foundQuestions, 
+    { 
+        type: 'input', 
+        name: 'officeNumber'. 
+        messege: 'Please enter office number:', 
+
+    },  
+]; 
+
+//Intern Questions 
+
+const internQuestions = [ 
+    ...foundQuestions, 
+    
+    type: 'input', 
+    name:'University', 
+    messege: 'Please enter current or last location of education:', 
+
+
+]
+
+
+//Engineer Questions 
+
+const engineerQuestions = [ 
+    ...foundQuestions, 
+    { 
+        type 'input', 
+        name: "github", 
+        messege:'Please enter User GitHub username:', 
+
+
+    }
+];
+
+//Hiring manager 
+inquirer.prompt(managerQuestions)
+.then((response) => { 
+    const manager = new Manager(response.name, response.id, response.email, response.officeNumber); 
+    teamArray.push(manager); 
+    determineEmployee(); 
+});
+
+//decide employee to hire 
+
+function determineEmployee() { 
+    const employeeQuestions = [{
+        name: 'choice', 
+        type: 'list', 
+        messege:'add your profession:', 
+        choice: 'Intern', 'Engineer', 'Done', 
+
+    }, ]; 
+    inquirer.prompt(employeeQuestions) 
+    .then((answers) => { 
+        if (answers.choice === 'intern') { 
+            internInfo(); 
+        }
+        if(answers.choice === 'Engineer') { 
+            engineerInfo(); 
+        }
+        if(answers.choice == 'Done'); { 
+            createHTMLFile(); 
+        }
+    })
+}
