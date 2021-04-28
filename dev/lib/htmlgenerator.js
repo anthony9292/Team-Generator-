@@ -34,7 +34,7 @@ const renderManager =  engineer => {
      template = replacePlaceholders(template, "name", engineer.getName()); 
      template = replacePlaceholders(template, "role", engineer.getRole()); 
      template = replacePlaceholders(template, "email", engineer.getEmail()); 
-     template = replacePlaceHolders(template, "id", engineer.getId());
+     template = replacePlaceholders(template, "id", engineer.getId());
      template = replacePlaceholders(template, "github", engineer.getGithub()); 
      return template; 
 }; 
@@ -48,3 +48,15 @@ const renderManager = intern => {
      template = replacePlaceholders(template, "University", intern.getUniversity()); 
      return template; 
 }; 
+
+const renderIndex = html => { 
+    const. template = fs.readFileSync(path.resolve(templatesDir, "index.html") "utf8"); 
+     return replacePlaceholders(template, "squad", html); 
+};  
+
+const replacePlaceholders = (template, placeholder, value) => { 
+    const pattern = new RegExp("{{ " + placeholder + "}}", "gm"); 
+    return template.replace(pattern, value); 
+}; 
+
+module.exports = render; 
