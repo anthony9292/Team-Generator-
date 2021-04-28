@@ -20,5 +20,30 @@ const render = employees => {
 }
 
 const renderManager =  manager => { 
-    let template = 
-}
+    let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8"); 
+     template = replacePlaceHolders(template, "name", manager.getName()); 
+     template = replacePlaceHolders(template, "role", manager.getRole()); 
+     template = replacePlaceHolders(template, "email", manager.getEmail()); 
+     template = replacePlaceHolders(template, "officeNumber", manager.getOfficeNumbber()); 
+     return template; 
+}; 
+
+
+const renderManager =  manager => { 
+    let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8"); 
+     template = replacePlaceHolders(template, "name", manager.getName()); 
+     template = replacePlaceHolders(template, "role", manager.getRole()); 
+     template = replacePlaceHolders(template, "email", manager.getEmail()); 
+     template = replacePlaceHolders(template, "officeNumber", manager.getOfficeNumbber()); 
+     return template; 
+}; 
+
+
+const renderManager =  manager => { 
+    let template = fs.readFileSync(path.resolve(templatesDir, "manager.html"), "utf8"); 
+     template = replacePlaceHolders(template, "name", manager.getName()); 
+     template = replacePlaceHolders(template, "role", manager.getRole()); 
+     template = replacePlaceHolders(template, "email", manager.getEmail()); 
+     template = replacePlaceHolders(template, "officeNumber", manager.getOfficeNumbber()); 
+     return template; 
+}; 
