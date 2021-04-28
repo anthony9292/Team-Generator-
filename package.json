@@ -4,6 +4,7 @@
   "description": "OOP test for coding bootcamp homework ",
   "main": "index.js",
   "scripts": {
+    "start": "node app",
     "test": "test"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/anthony9292/Team-Generator-/issues"
   },
-  "homepage": "https://github.com/anthony9292/Team-Generator-#readme"
+  "homepage": "https://github.com/anthony9292/Team-Generator-#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "faye": "^1.4.0",
+    "jest": "^26.6.3"
+  }
 }

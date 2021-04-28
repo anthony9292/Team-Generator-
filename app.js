@@ -1,6 +1,6 @@
 const Manager = require("./dev/lib/Manager"); 
 const Engineer = require("./dev/lib/Engineer"); 
-const Intern = require("./div/lib/Intern");
+const Intern = require("./dev/lib/Intern");
 const inquirer = require("inquirer"); 
 const path = require("path"); 
 const fs = require("fs"); 
@@ -9,7 +9,7 @@ const { request } = require("node:http");
 const Turnout_Dir = path.resolve(__dirname, "turnouts"); 
 const turnoutPath = path.join(Turnout_Dir, "team.html"); 
 
-const render = require("./dev/lib/htmlgenerator"); 
+const render = require("./dev/lib/generator"); 
 const { type } = require("node:os");
 
 const teamArray = []; 
