@@ -18,23 +18,21 @@ const teamArray = [];
 const foundQuestions = [{
     type: 'input', 
     name: 'name', 
-    messege: 'Please enter the employees: name:',
+    message: "Please enter the employees: name:",
 
-}
+}, 
 
 { 
-
     type: 'input', 
-    name:'id'. 
-    messege: 'Please enter the employees:id:' 
+    name:'id', 
+    message: "Please enter the employees:id:", 
 }, 
 
   { 
-
-   type: 'input'
+   type: 'input', 
    name:'email', 
-   messege: 'Please enter the employees:email', 
-  }
+   message: "Please enter the employees:email", 
+  }, 
 
 ]; 
 
@@ -45,8 +43,8 @@ const managerQuestions = [
     ...foundQuestions, 
     { 
         type: 'input', 
-        name: 'officeNumber'. 
-        messege: 'Please enter office number:', 
+        name: 'officeNumber', 
+        message: "Please enter office number:", 
 
     },  
 ]; 
@@ -56,25 +54,24 @@ const managerQuestions = [
 const internQuestions = [ 
     ...foundQuestions, 
     
+    {
     type: 'input', 
     name:'University', 
-    messege: 'Please enter current or last location of education:', 
+    message: 'Please enter current or last location of education:', 
 
-
-]
+    },
+];
 
 
 //Engineer Questions 
 
 const engineerQuestions = [ 
     ...foundQuestions, 
-    { 
-        type 'input', 
-        name: "github", 
-        messege:'Please enter User GitHub username:', 
-
-
-    }
+    {
+        type: 'input', 
+        name: 'github', 
+        message:'Please enter User GitHub username:', 
+    },
 ];
 
 //Hiring manager 
@@ -91,8 +88,8 @@ function determineEmployee() {
     const employeeQuestions = [{
         name: 'choice', 
         type: 'list', 
-        messege:'add your profession:', 
-        choice: 'Intern', 'Engineer', 'Done', 
+        message:'add your profession:', 
+        choice: ['Intern', 'Engineer', 'Done',]
 
     }, ]; 
     inquirer.prompt(employeeQuestions) 
@@ -121,7 +118,7 @@ function  internInfo() {
 
  //creation of Engineer for the team 
  function internInfo() { 
-     inquirer.prompt(internQuestions) 
+     inquirer.prompt(engineerQuestions) 
      .then((response) => { 
          const engineer = new Engineer(response.name, response.id, response.email, response.github);
          teamArray.push(engineer)
