@@ -18,20 +18,20 @@ const teamArray = [];
 const foundQuestions = [{
     type: 'input', 
     name: 'name', 
-    message: "Please enter the employees: name:",
+    message: "Enter Your: name:",
 
 }, 
 
 { 
     type: 'input', 
     name:'id', 
-    message: "Please enter the employees:id:", 
+    message: "Enter Your employee: id:", 
 }, 
 
   { 
    type: 'input', 
    name:'email', 
-   message: "Please enter the employees:email", 
+   message: "Enter Your employee: email", 
   }, 
 
 ]; 
@@ -57,8 +57,7 @@ const internQuestions = [
     {
     type: 'input', 
     name:'University', 
-    message: 'Please enter current or last location of education:', 
-
+    message: 'Enter Your current or last location of education:', 
     },
 ];
 
@@ -70,7 +69,7 @@ const engineerQuestions = [
     {
         type: 'input', 
         name: 'github', 
-        message:'Please enter User GitHub username:', 
+        message:'Enter Your Github username:', 
     },
 ];
 
@@ -88,13 +87,13 @@ function determineEmployee() {
     const employeeQuestions = [{
         name: 'choice', 
         type: 'list', 
-        message:'add your profession:', 
+        message:'Add your profession:', 
         choice: ['Intern', 'Engineer', 'Done',]
 
     }, ]; 
     inquirer.prompt(employeeQuestions) 
     .then((answers) => { 
-        if (answers.choice === 'intern') { 
+        if (answers.choice === 'Intern') { 
             internInfo(); 
         }
         if(answers.choice === 'Engineer') { 
