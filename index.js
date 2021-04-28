@@ -10,7 +10,29 @@ const OutPut_Dir = path.resolve(__dirname, "outputs");
 const outputPath = path.join(OutPut_Dir, "team.html"); 
 
 const render = require("./dev/lib/htmlgenerator"); 
+const { type } = require("node:os");
 
 const teamArray = []; 
+// foundation questions to start 
+const foundQuestions = [{
+    type: 'input', 
+    name: 'name', 
+    messege: 'Please enter the employees: name:',
 
-const 
+}
+
+{ 
+
+    type: 'input', 
+    name:'id'. 
+    messege: 'Please enter the employees:id:' 
+}, 
+
+  { 
+
+   type: 'input'
+   name:'email', 
+   messege: 'Please enter the employees:email', 
+  }
+
+]; 
