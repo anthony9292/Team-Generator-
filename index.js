@@ -38,7 +38,6 @@ const foundQuestions = [{
 
 //Part 2
 //Manager Questions 
-
 const managerQuestions = [ 
     ...foundQuestions, 
     { 
@@ -50,7 +49,6 @@ const managerQuestions = [
 ]; 
 
 //Intern Questions 
-
 const internQuestions = [ 
     ...foundQuestions, 
     
@@ -63,7 +61,6 @@ const internQuestions = [
 
 
 //Engineer Questions 
-
 const engineerQuestions = [ 
     ...foundQuestions, 
     {
@@ -82,7 +79,6 @@ inquirer.prompt(managerQuestions)
 });
 
 //decide employee to hire 
-
 function determineEmployee() { 
     const employeeQuestions = [{
         name: 'choice', 
