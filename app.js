@@ -15,7 +15,7 @@ function startingPrompt() {
             {
 
          
-        messege:"/////////Welcome to team Generator Web Page! To get started please write our team name://///////", 
+        message:"/////////Welcome to team Generator Web Page! To get started please write our team name://///////", 
     }
 
     ])
@@ -31,7 +31,7 @@ function addManager() {
     inquirer.prompt([ 
 
         { 
-            messege:"Please enter your teams Manager's name?",
+            message:"Please enter your teams Manager's name?",
             name:"name" 
         }, 
         { 
@@ -84,3 +84,34 @@ function addTeamMembers() {
         }
     }); 
  }
+
+ function addEngineer() { 
+     inquirer.prompt([
+         {
+             message: "Engineer, what is your name?", 
+             name:"name" 
+         }, 
+         {
+             message: "Engineer,what is your email address?", 
+             name:"email"             
+         }, 
+        { 
+            message: "Engineer,  what is your Github profile?", 
+            name:"github"
+        }
+
+
+     ])
+
+     .then(function (data) { 
+         const name = data.name
+         const id = finalTeamArray.length + 1
+         const email = data.email
+         const github = data.github
+         const teamMember = new Engineer(name, id , email, github)
+         finalTeamArray.push(teamMember)
+         adddTeamMembers()
+      }); 
+ }; 
+
+ 
