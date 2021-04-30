@@ -5,7 +5,8 @@ const style = require("./dev/templets/css")
 const Employee = require("./dev/lib/employee")
 const Intern = require("./dev/lib/intern")
 const Manager = require("./dev/lib/manager")
-const Engineer = require("./dev/lib/engineer")
+const Engineer = require("./dev/lib/engineer");
+const Choices = require("inquirer/lib/objects/choices");
 
 let finalTeamArray = []; 
 
@@ -54,4 +55,32 @@ function addManager() {
             finalTeamArray.push(teamMember)
             addTeamMembers(); 
         }); 
-}
+} 
+
+function addTeamMembers() { 
+    inquirer.prompt([
+        { 
+            type:"list",
+            message: "Please select to add more team members",
+            choices:["YES, add a Engineer", "YES, add a intern", "NO, team is already complete"], 
+            name: "addMemberData"
+        }
+    ])
+
+    .then(function (data) { 
+
+        switch (data.addMemberData) { 
+            case "YES, add  Engineer":
+            addEngineer(); 
+            break;  
+
+            case "YES, add a intern":
+                addIntern(); 
+                break; 
+
+            case "NO, my team is already complete":
+                compileTeam(); 
+                break; 
+        }
+    }); 
+ }
