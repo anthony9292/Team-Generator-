@@ -26,9 +26,32 @@ function startingPrompt() {
 
 }
 
-function addManager() |{ 
-    inquirer.prompt([
-          
-        
+function addManager() { 
+    inquirer.prompt([ 
+
+        { 
+            messege:"Please enter your teams Manager's name?",
+            name:"name" 
+        }, 
+        { 
+            message: "Please enter your team Manager's email",
+            name:"email"
+        }, 
+
+        {    
+            type: "number", 
+            message: "Plea enter your team Manager's Office Number",
+            name:"officeNumber"
+        }, 
     ])
+
+        .then(function (data) {
+            const name = data.name
+            const id = 1 
+            const email = data.email
+            const officeNumber = data.officeNumber
+            const teamMember = new Manager(name, id, email, officeNumber)
+            finalTeamArray.push(teamMember)
+            addTeamMembers(); 
+        }); 
 }
