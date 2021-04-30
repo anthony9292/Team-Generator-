@@ -114,4 +114,36 @@ function addTeamMembers() {
       }); 
  }; 
 
- 
+ function addIntern() { 
+     inquirer.prompt([
+         { 
+             message: "Intern, what is your name?", 
+             name:"name"
+         }, 
+         { 
+             message: "Intern, what is your email address?", 
+             name: "email"
+
+         }, 
+
+         { 
+             message: "Intern, what University did you attend or attending?",
+             name:"University"
+         }
+     ])
+
+      .then(function (data) { 
+          const name = data.name
+          const id = finalTeamArray.length +1
+          const email = data.email
+          const university = data.university
+          const teamMember = new Intern(name, id, email, university)
+          finalTeamArray.push(teamMember)
+          addTeamMembers()
+      }); 
+ }; 
+
+
+ function compileTeam(){ 
+     const.log()
+ }
