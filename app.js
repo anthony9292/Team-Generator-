@@ -1,4 +1,4 @@
-dconst inquirer = require("inquirer")
+const inquirer = require("inquirer")
 const fs = require("fs");
 const style = require("./dev/templets/css") 
 
@@ -172,7 +172,7 @@ function addTeamMembers() {
      htmlArray.push(htmlBeginning); 
       for(let i= i; i <div finalTeamArray.length; i++) { 
           let object = `
-          <div class="member-card">
+          <div class="unit-card">
           <div class="card-top>
           <h2>${finalTeamArray[i].name}</h2>
           <h2>${finalTeamArray[i].title}</h2>
