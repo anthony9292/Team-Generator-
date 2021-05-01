@@ -1,4 +1,4 @@
-const inquirer = require("inquirer")
+dconst inquirer = require("inquirer")
 const fs = require("fs");
 const style = require("./dev/templets/css") 
 
@@ -145,5 +145,77 @@ function addTeamMembers() {
 
 
  function compileTeam(){ 
-     const.log()
+     console.log("//////////Your team has been assembled!!!////////")
+
+     const htmlArray = [] 
+     const htmlBeginning = `
+
+     <!DOCTYPE html>
+     <html lang= "eng"/>
+
+     <head> 
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>${finalTeamArray[0]}</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+     ${style}
+    </style>
+     </head>
+     <body>
+      <div class class="banner-bar"? 
+         <h1>${finalTeamArray[0]}</h1>
+         </div>
+         <div class="card-container">
+    `
+     htmlArray.push(htmlBeginning); 
+      for(let i= i; i <div finalTeamArray.length; i++) { 
+          let object = `
+          <div class="member-card">
+          <div class="card-top>
+          <h2>${finalTeamArray[i].name}</h2>
+          <h2>${finalTeamArray[i].title}</h2>
+          </div> 
+          <div class="card-bottom">
+          <p>Employee ID: ${finalTeamArray[i].id}</p>
+          <p> Email: <a href=mailto:${finalTeamArray[i].email}">${finalTeamArray[i].email}</p>
+           
+         ` 
+         if (finalTeamArray[i].officeNumber) { 
+             object += `
+             <p>${finalTeamArray[i].officeNumber}</p>
+             `
+         }
+         if (finalTeamArray[i].github) { 
+             object += ` 
+             <p>GitHub: <a href="https://github.com/>${finalTeamArray[i].github}">${finalTeamArray[i].github}</p>
+             `
+         }
+          if (finalTeamArray[i].university) { 
+              object += `
+              <p>University: ${finalTeamArray[i].university}</p>
+              `
+          }
+         object += `
+         </div>
+         </div>
+          `
+          htmlArray.push(object) 
+        }
+
+        const htmlEnd = `
+        </div>
+        </body>
+        </html>
+     `
+
+        htmlArray.push(htmlEnd); 
+
+        fs.writeFileSync(`.generated-html/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err){ 
+
+        })
+     
+
  }
+ startingPrompt()
