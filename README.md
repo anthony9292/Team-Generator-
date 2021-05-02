@@ -25,10 +25,11 @@ I have used a mit License for this application, please see repository for docume
 
 ## Tests
  The test Program was build by using class syntax and constructor functions.  
+
 ![Testing Gif](https://github.com/anthony9292/Team-Generator-/blob/main/test-gif.gif)
-  ![Screenshot of all tests passing based on jest output](
-      
-  )
+
+![Screenshot showing all tests passing](https://github.com/anthony9292/Team-Generator-/blob/main/assets/All%20test%20passing.PNG)
+
 
  
 
