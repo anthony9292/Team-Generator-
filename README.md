@@ -11,6 +11,8 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
+  - [Tests Gif](#tests-gif)
+  - [Tests screenshot](#tests-screenshot)
   - [Questions](#questions)
 
 ## Installation
@@ -26,9 +28,10 @@ I have used a mit License for this application, please see repository for docume
 ## Tests
  The test Program was build by using class syntax and constructor functions.  
 
-## TEST GIF AND SCREENSHOT
+## TEST GIF
 ![Testing Gif](https://github.com/anthony9292/Team-Generator-/blob/main/test-gif.gif)
 
+## Test Screenshot
 ![Screenshot showing all tests passing](https://github.com/anthony9292/Team-Generator-/blob/main/assets/All%20test%20passing.PNG)
 
 
