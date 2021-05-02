@@ -21,7 +21,7 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
 ## Images 
 Team Profile Demonstration GIF: 
 
-![Team Profile Gif](https://github.com/anthony9292/Team-Generator-/blob/main/teamgenerator.gi)
+![Team Profile Gif](https://github.com/anthony9292/Team-Generator-/blob/main/team-gif.gif)
 
 ## Youtube 
 
