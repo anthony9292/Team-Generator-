@@ -1,12 +1,11 @@
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
 const fs = require("fs");
 const style = require("./dev/templets/css") 
 
 const Employee = require("./dev/lib/employee")
 const Intern = require("./dev/lib/intern")
 const Manager = require("./dev/lib/manager")
-const Engineer = require("./dev/lib/engineer");
-const Choices = require("inquirer/lib/objects/choices");
+const Engineer = require("./dev/lib/engineer")
 
 let finalTeamArray = []; 
 
@@ -16,6 +15,7 @@ function startingPrompt() {
 
          
         message:"/////////Welcome to team Generator Web Page! To get started please write our team name://///////", 
+         name: "teamname"
     }
 
     ])
@@ -41,7 +41,7 @@ function addManager() {
 
         {    
             type: "number", 
-            message: "Plea enter your team Manager's Office Number",
+            message: "Please enter your team Manager's Office Number",
             name:"officeNumber"
         }, 
     ])
@@ -108,7 +108,7 @@ function addTeamMembers() {
          const id = finalTeamArray.length + 1
          const email = data.email
          const github = data.github
-         const teamMember = new Engineer(name, id , email, github)
+         const teamMember = new Engineer(name, id, email, github)
          finalTeamArray.push(teamMember)
          adddTeamMembers()
       }); 
@@ -134,7 +134,7 @@ function addTeamMembers() {
 
       .then(function (data) { 
           const name = data.name
-          const id = finalTeamArray.length +1
+          const id = finalTeamArray.length + 1
           const email = data.email
           const university = data.university
           const teamMember = new Intern(name, id, email, university)
@@ -170,7 +170,7 @@ function addTeamMembers() {
          <div class="card-container">
     `
      htmlArray.push(htmlBeginning); 
-      for(let i= i; i <div finalTeamArray.length; i++) { 
+      for(let i = 1; i < finalTeamArray.length; i++) { 
           let object = `
           <div class="unit-card">
           <div class="card-top>
@@ -212,7 +212,7 @@ function addTeamMembers() {
 
         htmlArray.push(htmlEnd); 
 
-        fs.writeFileSync(`.generated-html/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err){ 
+        fs.writeFile(`./rendered-pages/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err){ 
 
         })
      
