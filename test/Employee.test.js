@@ -1,5 +1,5 @@
 const Employee = require("../lib/employee"); 
-import '@testing-library/jest-dom';
+
 
 describe("Employee", () => { 
     it("Can represent Employee instance", () => {
@@ -10,7 +10,7 @@ describe("Employee", () => {
     it("Can set name by means of constructor arguments", () =>{ 
         const name = "Jojo"; 
         const e = new Employee(name); 
-        expect(typeof(e)).toEqual("object");
+        expect(e.name).toEqual(name);
     }); 
 
     it("can set id by means of constructor arguments", () =>{ 
@@ -21,15 +21,15 @@ describe("Employee", () => {
 
     it("can set emails by means of constructor arguments", () =>{ 
         const testValue = "test@test.com";
-        const e = new Employee("Dio", testValue); 
-        expect(e.email).toBe(testValue); 
+        const e = new Employee("Dio", 1, testValue); 
+        expect(e.email).toEqual(testValue); 
     }); 
 
     describe("getName",() => { 
         it("can get name by means of getName()",() =>  { 
          const testValue = "Jojo";  
          const e = new Employee(testValue); 
-         expect(e.getName()).toBe(testValue);          
+         expect(e.getName()).toEqual(testValue);          
         }); 
     });
 
