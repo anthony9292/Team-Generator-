@@ -15,8 +15,7 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
 
 ## Installation
  This application requires `inquirer` and `jest` node packages installed first. then run the program buy execution of command `node app.js` to run the program. 
-## Images
- 
+## Images 
 
 ## License MIT
 I have used a mit License for this application, please see repository for documentation <https://github.com/anthony9292/Team-Generator-/blob/main/License.md>
@@ -25,8 +24,14 @@ I have used a mit License for this application, please see repository for docume
    anthony9292
 
 ## Tests
- The test Program was build by using class syntax and constructor functions. 
-        
+ The test Program was build by using class syntax and constructor functions.  
+![Testing Gif](https://github.com/anthony9292/Team-Generator-/blob/main/test-gif.gif)
+  ![Screenshot of all tests passing based on jest output](
+      
+  )
+
+ 
+
 ## Questions
 For questions regarding this application please contact me at:
 - E-mail anthon.n08@gmail.com 
