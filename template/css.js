@@ -43,7 +43,7 @@ h2 {
 
 }
 
-.unit-card { 
+.member-card { 
     width:250px; 
     height: 35vh; 
     margin-bottom:4vh;
