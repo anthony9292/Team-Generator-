@@ -11,8 +11,8 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [Tests Gif](#tests-gif)
-  - [Tests screenshot](#tests-screenshot)
+  - [Tests Gif](#tests gif)
+  - [Tests screenshot](#tests screenshot)
   - [Questions](#questions)
 
 ## Installation
