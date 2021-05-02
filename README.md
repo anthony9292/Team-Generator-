@@ -26,6 +26,7 @@ I have used a mit License for this application, please see repository for docume
 ## Tests
  The test Program was build by using class syntax and constructor functions.  
 
+## TEST GIF AND SCREENSHOT
 ![Testing Gif](https://github.com/anthony9292/Team-Generator-/blob/main/test-gif.gif)
 
 ![Screenshot showing all tests passing](https://github.com/anthony9292/Team-Generator-/blob/main/assets/All%20test%20passing.PNG)
