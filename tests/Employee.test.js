@@ -30,15 +30,15 @@ test("Can get Id by means of getId()", () => {
 }); 
 
 test("can get email by means of getEmail()", () => { 
-    const test values = "test@test.com"; 
+    const testValue = "test@test.com"; 
     const e = new Employee("Doi",testValue); 
     expect(e.getRole()).toBe(testValue); 
 
 }); 
 
-test("getRole() should return \Employee\"", () => { 
+test("getRole() should return \"Employee\"", () => { 
     const testValue = "Employee"; 
-    const e = new Employee("Jojo", 1, "test@test.com"); 
+    const e = new Employee("Doi", 1, "test@test.com"); 
     expect(e.getRole()).toBe(testValue); 
 
 }); 
