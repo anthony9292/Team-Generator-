@@ -179,7 +179,7 @@ function compileTeam() {
         `
         if (finalTeamArray[i].officeNumber) {
             object += `
-            <p>${finalTeamArray[i].officeNumber}</p>
+            <p>Office Number: ${finalTeamArray[i].officeNumber}</p>
             `
         }
         if (finalTeamArray[i].github) {
