@@ -14,8 +14,15 @@ MIT<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](ht
   - [Questions](#questions)
 
 ## Installation
- This application requires `inquirer` and `jest` node packages installed first. then run the program buy execution of command `node app.js` to run the program. 
+ This application requires `inquirer` and `jest` node packages installed first. then run the program buy execution of command `node app.js` to run the program.
+
 ## Images 
+Team Profile Demonstration GIF: 
+
+![Team Profile Gif]( 
+    
+)
+
 
 ## License MIT
 I have used a mit License for this application, please see repository for documentation <https://github.com/anthony9292/Team-Generator-/blob/main/License.md>
@@ -28,12 +35,6 @@ I have used a mit License for this application, please see repository for docume
 
 ## TEST GIF
 ![Testing Gif](https://github.com/anthony9292/Team-Generator-/blob/main/test-gif.gif)
-
-## Test Screenshot
-![Screenshot showing all tests passing](https://github.com/anthony9292/Team-Generator-/blob/main/assets/All%20test%20passing.PNG)
-
-
- 
 
 ## Questions
 For questions regarding this application please contact me at:
