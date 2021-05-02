@@ -24,33 +24,33 @@ describe("Employee", () => {
         expect(e.email).toBe(testValue); 
     }); 
 
-    describe("gertName",() => { 
+    describe("getName",() => { 
         it("can get name by means of getName()",() =>  { 
          const testValue = "Jojo";  
          const e = new Employee(testValue); 
-         expect(e.getName()).toBe*(testValue);          
+         expect(e.getName()).toBe(testValue);          
         }); 
     });
 
-    describe("gertName",() => { 
-        it("can get name by means of getName()",() =>  { 
-         const testValue = "Jojo";  
-         const e = new Employee(testValue); 
-         expect(e.getName()).toBe*(testValue);          
+    describe("getId",() => { 
+        it("can get Id by means of getId()",() =>  { 
+         const testValue = 100;  
+         const e = new Employee("Dio", testValue); 
+         expect(e.getId()).toBe(testValue);          
         }); 
     });
-    describe("gertName",() => { 
-        it("can get name by means of getName()",() =>  { 
-         const testValue = "Jojo";  
-         const e = new Employee(testValue); 
-         expect(e.getName()).toBe*(testValue);          
+    describe("getEmail",() => { 
+        it("can get Email by means of getEmail()",() =>  { 
+         const testValue = "test@test.com";  
+         const e = new Employee("Dio", 1, testValue); 
+         expect(e.getEmail()).toBe(testValue);          
         }); 
     });
-    describe("gertName",() => { 
-        it("can get name by means of getName()",() =>  { 
-         const testValue = "Jojo";  
-         const e = new Employee(testValue); 
-         expect(e.getName()).toBe*(testValue);          
+    describe("getRole",() => { 
+        it("getRole() should return \"Employee\"" ,() =>  { 
+         const testValue = "Employee";  
+         const e = new Employee("Jojo", 1, "test@test.com"); 
+         expect(e.getRole()).toBe(testValue);          
         }); 
     });
-})
+}); 
