@@ -1,8 +1,12 @@
 {
   "name": "team-generator-",
   "version": "1.0.0",
-  "description": "OOP test for coding bootcamp homework ",
-  "main": "index.js",
+  "description": "OOP and test for coding bootcamp homework ",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
     "start": "node app",
     "test": "test"
@@ -20,6 +24,7 @@
   "dependencies": {
     "babel": "^6.23.0",
     "faye": "^1.4.0",
+    "inquirer": "^8.0.0",
     "jest": "^26.6.3"
   }
 }
