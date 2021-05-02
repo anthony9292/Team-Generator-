@@ -25,20 +25,20 @@ test("Can get name by means of getName()", () =>{
 
 test("Can get Id by means of getId()", () => { 
     const testValue = 100; 
-    const e = new Employee("Doi", testValue); 
+    const e = new Employee("Dio", testValue); 
     expect(e.getId()).toBe(testValue); 
 }); 
 
 test("can get email by means of getEmail()", () => { 
     const testValue = "test@test.com"; 
-    const e = new Employee("Doi",testValue); 
+    const e = new Employee("Dio",testValue); 
     expect(e.getRole()).toBe(testValue); 
 
 }); 
 
 test("getRole() should return \"Employee\"", () => { 
     const testValue = "Employee"; 
-    const e = new Employee("Doi", 1, "test@test.com"); 
+    const e = new Employee("Dio", 1, "test@test.com"); 
     expect(e.getRole()).toBe(testValue); 
 
 }); 
