@@ -140,7 +140,7 @@ function addIntern() {
 };
 
 function compileTeam() {
-    console.log("//////////You've done it!!! Now give your team a raise.////////")
+    console.log("//////////You have finished assembling your team////////")
 
     const htmlArray = []
     const htmlBeginning = `
