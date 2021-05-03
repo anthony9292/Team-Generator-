@@ -39,7 +39,7 @@ h2 {
 }
 
 .member-card {
-    width: 250px;
+    width: 290px;
     height: 34vh;
     margin-bottom: 5vh;
     background-color: rgb(240, 238, 238);
@@ -59,7 +59,7 @@ h2 {
 .card-top {
     background-color: rgb(131, 236, 250);
     border: 2px solid rgb(131, 236, 250);
-    width: 246px;
+    width: 286px;
     border-top-left-radius: 10px;
 }
 

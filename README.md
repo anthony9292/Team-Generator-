@@ -23,6 +23,9 @@ Team Profile Demonstration GIF:
 
 ![Team Profile Gif](https://github.com/anthony9292/Team-Generator-/blob/main/team-gif.gif)
 
+Sample of generated Team pages : 
+![Sample of generated page]
+
 ## Youtube 
 
   Link to team generated in action -->https://youtu.be/ZIHVTRq9M64
